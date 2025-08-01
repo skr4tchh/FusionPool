@@ -94,7 +94,6 @@ public class FusionPool extends JavaPlugin implements Listener {
         Player player = event.getPlayer();
         if (event.getRegionName().equalsIgnoreCase(regionName) && player.getWorld().getName().equalsIgnoreCase(worldName)) {
             activePlayers.put(player, System.currentTimeMillis());
-            player.sendTitle("§fВы вошли в §6рублевое озеро", "", 10, 70, 20);
         }
     }
 
@@ -103,7 +102,6 @@ public class FusionPool extends JavaPlugin implements Listener {
         Player player = event.getPlayer();
         if (event.getRegionName().equalsIgnoreCase(regionName) && player.getWorld().getName().equalsIgnoreCase(worldName)) {
             activePlayers.remove(player);
-            player.sendTitle("§fВы покинули §6рублевое озеро", "", 10, 70, 20);
         }
     }
 
