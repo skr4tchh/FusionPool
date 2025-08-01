@@ -1,0 +1,5 @@
+name: FusionPool
+version: '${version}'
+main: fun.fusionmine.fusionpool.FusionPool
+api-version: '1.16'
+depend: [WorldGuard, WorldGuardEvents, PlayerPoints]
