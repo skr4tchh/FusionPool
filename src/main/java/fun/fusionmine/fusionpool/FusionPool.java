@@ -102,6 +102,7 @@ public class FusionPool extends JavaPlugin implements Listener {
         Player player = event.getPlayer();
         if (event.getRegionName().equalsIgnoreCase(regionName) && player.getWorld().getName().equalsIgnoreCase(worldName)) {
             activePlayers.remove(player);
+            player.clearTitle();
         }
     }
 
